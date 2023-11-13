@@ -16,11 +16,19 @@ header {
   margin: 0 auto;
   padding: 30px 0;
 }
+.nav {
+  margin-right: 100px;
+}
+.nav-mobile {
+  width: 891px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   &__text {
     font-size: 36px;
     font-weight: 700;
@@ -60,12 +68,65 @@ header {
     font-weight: 700;
   }
 }
+
+// кнопка для бургер
+
 .nav-toggler {
   display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+.nav-toggler span {
+  height: 2px;
+  width: 80%;
+  transform: scale(1);
+  background-color: #fff;
+}
+.nav-toggler::after,
+.nav-toggler::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.3s ease 0s;
+}
+.nav-toggler::before {
+  top: 0;
+}
+.nav-toggler::after {
+  bottom: 0;
 }
 
+.nav-toggler.active span {
+  transform: scale(0);
+}
+.nav-toggler.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+.nav-toggler.active::after {
+  top: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+//класс который добавляется при клике на бургер и показывает все display:none; использовала именно так потому что можно было использовать toggle js чтобы при клике становилось видимым и снова клике обратно возращалась
+.open {
+  display: flex !important;
+}
+
+@media (max-width: 1045px) {
+  .nav {
+    margin-right: 50px;
+  }
+}
 @media (max-width: 1025px) {
-  .navbar, .container {
+  .navbar,
+  .container {
     margin: 0 auto;
     max-width: 880px;
   }
@@ -75,6 +136,9 @@ header {
   }
   .logo__text {
     font-size: 32px;
+  }
+  .nav {
+    margin-right: 0;
   }
 
   .nav-list {
@@ -87,7 +151,7 @@ header {
 
   .nav-btn {
     gap: 30px;
-    &__support { 
+    &__support {
       font-size: 16px;
     }
     &__sign {
@@ -102,28 +166,38 @@ header {
   header {
     min-height: 60vh;
   }
-  .navbar, .container {
+  .navbar,
+  .container {
     max-width: 750px;
+  }
+  .nav-mobile {
+    width: 100%;
   }
   .nav-btn {
     margin-left: 130px;
   }
-  .nav-list {
-    display: none;
 
-  }
   .nav-toggler {
-    display: block;
-    outline: none;
-    border: 0;
-    background: transparent;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    &__svg {
-      width: 30px;
-      height: 30px;
-    }
+    display: flex;
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: #000;
+  }
+  .nav-list {
+    flex-direction: column;
+    gap: 30px;
   }
 }
 
@@ -131,10 +205,33 @@ header {
   header {
     min-height: 60vh;
   }
-  .navbar, .container {
+  .navbar,
+  .container {
     max-width: 360px;
   }
-  .nav-btn {
+  .nav-toggler {
+    display: flex;
+  }
+
+  .nav-mobile {
     display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: #000;
+  }
+  .nav-btn {
+    z-index: 50;
+    flex-direction: column;
+    margin: 0;
   }
 }

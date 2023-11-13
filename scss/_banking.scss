@@ -8,10 +8,10 @@
   background-color: $white-bg;
   padding-top: 50px;
   &__img {
-  flex-basis: calc(100% - 344px - 200px);
+    flex-basis: calc(100% - 344px - 200px);
   }
   &__content {
-  flex-basis: 344px;
+    flex-basis: 344px;
   }
   &__img1 {
     position: relative;
@@ -46,7 +46,7 @@
 @media (max-width: 1070px) {
   .banking__img {
     flex-basis: calc(100% - 344px - 90px);
-    }
+  }
 }
 @media (max-width: 1025px) {
   .banking__img {
@@ -79,12 +79,12 @@
   }
 }
 @media (max-width: 880px) {
- .banking__content {
-  flex-basis: 245px;
- }
- .banking__img {
-  flex-basis: calc(100% - 300px);
-}
+  .banking__content {
+    flex-basis: 245px;
+  }
+  .banking__img {
+    flex-basis: calc(100% - 300px);
+  }
 }
 @media (max-width: 610px) {
   .banking-wrap {

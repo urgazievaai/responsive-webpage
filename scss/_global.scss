@@ -13,7 +13,11 @@ body {
 section {
   width: 100vw;
 }
-h1, h2, h3, p, a {
+h1,
+h2,
+h3,
+p,
+a {
   margin: 0;
   font-family: $font-family;
   line-height: 128%;
@@ -85,4 +89,3 @@ li {
     margin-bottom: 8px;
   }
 }
-

@@ -77,16 +77,16 @@
   .cards {
     gap: 25px;
     &__item {
-        width: 220px;
-        height: 164px;
-        padding: 31px 19px 23px 35px;
-  }
-  &__title {
-    font-size: 18px;
-  }
-  &__desc {
-    font-size: 14px;
-  }
+      width: 220px;
+      height: 164px;
+      padding: 31px 19px 23px 35px;
+    }
+    &__title {
+      font-size: 18px;
+    }
+    &__desc {
+      font-size: 14px;
+    }
   }
 }
 
@@ -102,7 +102,7 @@
   }
   .cards__desc {
     font-size: 12px;
-  }  
+  }
   .cards__icon {
     width: 20px;
   }
@@ -112,7 +112,6 @@
   .advantages-wrap {
     flex-direction: column-reverse;
     gap: 0px;
-    
   }
   .advantages__content {
     flex-basis: 270px;
@@ -121,20 +120,20 @@
     gap: 25px;
     grid-template-columns: 1fr;
     margin-top: 10px;
-  &__item {
-    width: 300px;
-    height: 146px;
-    padding: 22px 11px 22px 30px;
-    &--4 {
-      margin-top: 0;
+    &__item {
+      width: 300px;
+      height: 146px;
+      padding: 22px 11px 22px 30px;
+      &--4 {
+        margin-top: 0;
+      }
+    }
+    &__title {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    &__desc {
+      font-size: 16px;
     }
   }
-  &__title {
-    font-size: 18px;
-    margin-bottom: 4px;
-  }
-  &__desc {
-    font-size: 16px;
-  } 
-}
 }

@@ -52,14 +52,14 @@
     flex-basis: calc(100% - 421px - 38px);
   }
 }
- @media (max-width: 880px) {
+@media (max-width: 880px) {
   .hero-content {
     flex-basis: 300px;
     &__title {
       font-size: 40px;
     }
     &__btn {
-      width:180px;
+      width: 180px;
       height: 46px;
       font-size: 16px;
     }
@@ -67,9 +67,9 @@
   .hero-image {
     flex-basis: calc(100% - 321px - 38px);
   }
- }
+}
 
- @media (max-width: 610px) {
+@media (max-width: 610px) {
   .hero-content {
     width: 100%;
     flex-basis: auto;
@@ -77,4 +77,4 @@
   .hero-image {
     display: none;
   }
- }
+}
