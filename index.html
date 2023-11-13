@@ -13,11 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap"
       rel="stylesheet"
     />
+    <script src="/script.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <nav class="navbar">
+        <div class="navbar">
           <a href="#" class="logo">
             <svg class="logo__icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -37,59 +38,41 @@
             </svg>
             <span class="logo__text"> blinqpay</span>
           </a>
-        
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Products</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Developers</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Company</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Pricing</a>
-            </li>
-          </ul>
-          <div class="nav-btn">
-            <a class="nav-btn__support">Support</a>
-            <button class="nav-btn__sign">
-              <p class="nav-btn__text">Sign in</p>
-            </button>
+          <div class="nav-mobile">
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-list__item">
+                  <a class="nav-list__link" href="#">Products</a>
+                </li>
+                <li class="nav-list__item">
+                  <a class="nav-list__link" href="#">Developers</a>
+                </li>
+                <li class="nav-list__item">
+                  <a class="nav-list__link" href="#">Company</a>
+                </li>
+                <li class="nav-list__item">
+                  <a class="nav-list__link" href="#">Pricing</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="nav-btn">
+              <a class="nav-btn__support">Support</a>
+              <button class="nav-btn__sign">
+                <p class="nav-btn__text">Sign in</p>
+              </button>
+            </div>
           </div>
-          <button class="nav-toggler">
-            <svg class="nav-toggler__svg"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="13"
-              viewBox="0 0 20 13"
-              fill="none"
-            >
-              <path
-                d="M1.5 6.73486H19"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M1.5 11.7349H19"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M1.5 1.73486H19"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </nav>
+          
+
+            <div class="nav-toggler">
+              <span></span>
+            </div>
+          </div>
+        
+          
+      
+ 
+       
         <div class="hero-wrap">
           <div class="hero-content">
             <h2 class="hero-content__title">Get Your Payment Faster</h2>
@@ -104,6 +87,8 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
     </header>
 
     <main>
