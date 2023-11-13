@@ -1,0 +1,45 @@
+@import "_vars.scss";
+
+.payment-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 123px;
+}
+.payment {
+  background-color: $white-bg;
+  &__content {
+    flex-basis: 344px;
+  }
+  &__image {
+    flex-basis: calc(100% - 344px - 123px);
+  }
+  &__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 880px) {
+  .payment {
+    margin-bottom: 50px;
+  }
+  .payment__content {
+    flex-basis: 270px;
+  }
+}
+
+@media (max-width: 610px) {
+  .payment {
+    margin-bottom: 20px;
+  }
+  .payment-wrap {
+    flex-direction: column;
+    gap: 0;
+  }
+  .payment__content {
+    flex-basis: 200px;
+  }
+  .payment__img {
+    width: 340px;
+}
+}

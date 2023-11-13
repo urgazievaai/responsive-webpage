@@ -1,0 +1,119 @@
+.banking-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+.banking {
+  background-color: $white-bg;
+  padding-top: 50px;
+  &__img {
+  flex-basis: calc(100% - 344px - 200px);
+  }
+  &__content {
+  flex-basis: 344px;
+  }
+  &__img1 {
+    position: relative;
+    margin-bottom: -49px;
+    height: 212px;
+  }
+  &__img2 {
+    position: relative;
+    margin-bottom: 54px;
+    margin-left: -61px;
+    height: 159px;
+  }
+  &__img3 {
+    position: relative;
+    margin-left: -84px;
+    height: 219px;
+  }
+  &__img4 {
+    position: relative;
+    margin-left: 143px;
+    margin-top: -97px;
+    height: 173px;
+  }
+  &__img5 {
+    position: relative;
+    margin-top: -90px;
+    margin-left: -49px;
+    height: 168px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .banking__img {
+    flex-basis: calc(100% - 344px - 90px);
+    }
+}
+@media (max-width: 1025px) {
+  .banking__img {
+    flex-basis: calc(100% - 344px);
+  }
+  .banking {
+    &__img1 {
+      margin-bottom: -49px;
+      height: 154px;
+    }
+    &__img2 {
+      margin-bottom: 34px;
+      margin-left: -66px;
+      height: 110px;
+    }
+    &__img3 {
+      margin-left: -53px;
+      height: 166px;
+    }
+    &__img4 {
+      margin-left: 95px;
+      margin-top: -89px;
+      height: 125px;
+    }
+    &__img5 {
+      margin-top: -66px;
+      margin-left: -49px;
+      height: 136px;
+    }
+  }
+}
+@media (max-width: 880px) {
+ .banking__content {
+  flex-basis: 245px;
+ }
+ .banking__img {
+  flex-basis: calc(100% - 300px);
+}
+}
+@media (max-width: 610px) {
+  .banking-wrap {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .banking__img {
+    margin-bottom: 50px;
+  }
+  .banking {
+    &__img1 {
+      margin-bottom: -49px;
+      height: 145px;
+    }
+    &__img2 {
+      margin-left: -66px;
+      height: 95px;
+    }
+    &__img3 {
+      margin-left: -53px;
+      height: 166px;
+    }
+    &__img4 {
+      margin-top: -50px;
+      height: 112px;
+    }
+    &__img5 {
+      margin-left: -42px;
+      height: 122px;
+    }
+  }
+}

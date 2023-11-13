@@ -1,0 +1,140 @@
+@import "_vars.scss";
+
+.advantages {
+  position: relative;
+  background-color: #f7f3fa;
+  padding: 150px 0 100px;
+  &__content {
+    flex-basis: 377px;
+  }
+}
+.advantages-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 129px;
+  z-index: 2;
+}
+
+.cards {
+  flex-basis: calc(100% - 377px - 129px);
+  max-width: 607px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  margin-top: 79px;
+
+  &__item {
+    width: 280px;
+    height: 164px;
+    padding: 28px 30px 30px 48px;
+    background-color: #fff;
+    border-left: 3px solid blue;
+    border-image: linear-gradient(151deg, #00b5d0 3.87%, #5c0e62 110.68%);
+    border-image-slice: 1;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 7px 10px 50px 0px #e8e2f0;
+    &--1 {
+      margin-top: 60px;
+    }
+    &--4 {
+      margin-top: -60px;
+    }
+  }
+  &__title {
+    color: #5c5e6e;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  &__desc {
+    color: #756f6f;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.bg-waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -11px;
+  width: 100%;
+  z-index: 1;
+  &svg {
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .advantages {
+    padding: 70px 0 100px;
+  }
+  .advantages-wrap {
+    gap: 70px;
+  }
+  .cards {
+    gap: 25px;
+    &__item {
+        width: 220px;
+        height: 164px;
+        padding: 31px 19px 23px 35px;
+  }
+  &__title {
+    font-size: 18px;
+  }
+  &__desc {
+    font-size: 14px;
+  }
+  }
+}
+
+@media (max-width: 880px) {
+  .cards__item {
+    width: 160px;
+    height: 126px;
+    padding: 20px 11px 22px 24px;
+  }
+  .cards__title {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .cards__desc {
+    font-size: 12px;
+  }  
+  .cards__icon {
+    width: 20px;
+  }
+}
+
+@media (max-width: 610px) {
+  .advantages-wrap {
+    flex-direction: column-reverse;
+    gap: 0px;
+    
+  }
+  .advantages__content {
+    flex-basis: 270px;
+  }
+  .cards {
+    gap: 25px;
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+  &__item {
+    width: 300px;
+    height: 146px;
+    padding: 22px 11px 22px 30px;
+    &--4 {
+      margin-top: 0;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  &__desc {
+    font-size: 16px;
+  } 
+}
+}

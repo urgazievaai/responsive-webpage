@@ -1,0 +1,30 @@
+@import "_vars.scss";
+
+.partners-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 139px;
+}
+.partners {
+  background-color: $white-bg;
+  margin-bottom: 70px;
+  &__link__img {
+    max-width: 66px;
+    max-height: 35px;
+  }
+}
+
+@media (max-width: 880px) {
+  .partners {
+    margin-bottom: 100px;
+  }
+  .partners-wrap {
+    gap: 110px;
+  }
+}
+@media (max-width: 610px) {
+  .partners-wrap {
+    gap: 16px;
+  }
+}

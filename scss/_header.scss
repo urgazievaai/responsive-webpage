@@ -1,0 +1,140 @@
+@import "_vars.scss";
+
+header {
+  background-image: url(/img/hero-bg.jpg);
+  max-width: 100vw;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  max-width: 1164px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &__text {
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+.nav-list__link {
+  color: $light;
+  &:hover {
+    color: #ffbc51;
+  }
+  &:active {
+    color: #ffbc51;
+  }
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  &__support {
+    font-weight: 700;
+  }
+  &__sign {
+    background: #ffbc51;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 96px;
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+.nav-toggler {
+  display: none;
+}
+
+@media (max-width: 1025px) {
+  .navbar, .container {
+    margin: 0 auto;
+    max-width: 880px;
+  }
+  .logo__icon {
+    width: 36px;
+    height: 36px;
+  }
+  .logo__text {
+    font-size: 32px;
+  }
+
+  .nav-list {
+    padding: 0;
+    gap: 25px;
+  }
+  .nav-list__link {
+    font-size: 16px;
+  }
+
+  .nav-btn {
+    gap: 30px;
+    &__support { 
+      font-size: 16px;
+    }
+    &__sign {
+      padding: 8px 30px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 880px) {
+  header {
+    min-height: 60vh;
+  }
+  .navbar, .container {
+    max-width: 750px;
+  }
+  .nav-btn {
+    margin-left: 130px;
+  }
+  .nav-list {
+    display: none;
+
+  }
+  .nav-toggler {
+    display: block;
+    outline: none;
+    border: 0;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    &__svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  header {
+    min-height: 60vh;
+  }
+  .navbar, .container {
+    max-width: 360px;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
